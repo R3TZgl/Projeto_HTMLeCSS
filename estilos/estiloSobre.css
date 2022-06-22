@@ -197,3 +197,19 @@ footer a:hover{
  
 }
 
+
+@media screen and (max-width: 450px){
+    #scroll{
+        margin-left: 85%;
+        margin-top: 100%;
+    }
+    #js{
+        width: 65px;
+    }
+    #py{
+        width: 60px;
+    }
+    #c{
+        width: 55px;
+    }
+}

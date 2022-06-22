@@ -47,7 +47,9 @@ li{
     color: rgba(255, 255, 255, 0.801);
 }
 
-
+ul{
+    width: 25%;
+}
 li a{
     margin: 1%;
     font-size: 30px;
@@ -112,7 +114,8 @@ p{
     border-radius: 20px;
     border: groove;
     border-color: rgb(80, 44, 179);
-
+    box-shadow: -2px 2px 10px rgb(27, 15, 59);
+    animation: onda 7s infinite;
 }
 .img{
     display: flex;
@@ -209,20 +212,13 @@ span a:hover{
     animation-name: giro;
     animation-duration: 0.5s;
 }
-@keyframes giro{
-    0% {transform: rotateZ(0deg);}
-    25% {transform: rotateZ(20deg);}
-    50% {transform: rotateZ(0deg);}
-    75% {transform: rotateZ(-20deg);}
-    100% {transform: rotateZ(0deg);}
-}
 #contato h2{
     color: rgb(255, 0, 76);
     font-size: 30px;
     margin: 1%;
     text-align: right;
 }
-#panda{
+#cavaleiro{
     align-items: right;
     height: 90px;
 }
@@ -260,7 +256,29 @@ footer a:hover{
 }
 
 
+/*Animações*/
+@keyframes giro{
+    0% {transform: rotateZ(0deg);}
+    25% {transform: rotateZ(20deg);}
+    50% {transform: rotateZ(0deg);}
+    75% {transform: rotateZ(-20deg);}
+    100% {transform: rotateZ(0deg);}
+}
+@keyframes onda{
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(2deg);}
+    50% {transform: rotate(0deg);}
+    80% {transform: rotate(-2deg);}
+    100% {transform: rotate(0deg);}
+}
+
+
+/*Responsividade*/
 @media screen and (max-width: 450px){
+    ul{
+        width: 100%;
+        padding: 0;
+    }
     li a{
         font-size: 20px;
     }
@@ -268,12 +286,25 @@ footer a:hover{
         font-size:30px;
     }
     #eu{
-        width: 100px;
+        width: 200px;
     }
     #inicio{
         width: 70%;
     }
     .img{
         display: list-item;
+    }
+    #scroll{
+        margin-left: 85%;
+        margin-top: 99%;
+    }
+    #js{
+        width: 65px;
+    }
+    #py{
+        width: 60px;
+    }
+    #c{
+        width: 55px;
     }
 }
