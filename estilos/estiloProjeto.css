@@ -55,7 +55,7 @@ li a{
     font-size: 30px;
     text-decoration: none;
     color: rgb(255, 0, 76);
-    transition: 1s
+    transition: 1s;
 
 }
 li a:hover{
@@ -68,6 +68,7 @@ li a:hover{
     margin-left: 0;
     padding-left: 2%;
     padding-right: 1.5%;
+    transition: 1s;
     
 }
 #first:hover{
