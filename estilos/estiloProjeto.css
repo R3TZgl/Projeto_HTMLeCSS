@@ -55,6 +55,7 @@ li a{
     font-size: 30px;
     text-decoration: none;
     color: rgb(255, 0, 76);
+    transition: 1s
 
 }
 li a:hover{
